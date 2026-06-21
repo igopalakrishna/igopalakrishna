@@ -1,0 +1,89 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.5" stop-color="#0B1730"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </linearGradient>
+    <linearGradient id="line" x1="100" y1="140" x2="1100" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(600 140) rotate(90) scale(72)">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="0.25" stop-color="#38BDF8"/>
+      <stop offset="0.65" stop-color="#2563EB" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <style>
+      .label { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: 1.6px; fill: #BAE6FD; }
+      .sub { font: 500 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: 1px; fill: #64748B; }
+      .node { fill: #0F1D34; stroke: #38BDF8; stroke-opacity: .5; }
+      .pulse { animation: pulse 3.8s ease-in-out infinite; transform-origin: center; }
+      .orbit { animation: spin 18s linear infinite; transform-origin: 600px 140px; }
+      .packet-a { animation: travel 5.5s linear infinite; }
+      .packet-b { animation: travel 5.5s linear infinite 1.35s; }
+      .packet-c { animation: travel 5.5s linear infinite 2.7s; }
+      .blink { animation: blink 2.6s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity:.45; transform:scale(.92);} 50% {opacity:1; transform:scale(1.08);} }
+      @keyframes spin { to { transform: rotate(360deg);} }
+      @keyframes travel { 0% { transform: translateX(0); opacity:0;} 8% {opacity:1;} 92% {opacity:1;} 100% { transform: translateX(940px); opacity:0;} }
+      @keyframes blink { 0%,100% {opacity:.25;} 50% {opacity:1;} }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="280" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="278" rx="23" stroke="#38BDF8" stroke-opacity="0.18"/>
+
+  <g opacity="0.25">
+    <path d="M0 70H1200M0 140H1200M0 210H1200" stroke="#38BDF8" stroke-opacity="0.12"/>
+    <path d="M150 0V280M300 0V280M450 0V280M600 0V280M750 0V280M900 0V280M1050 0V280" stroke="#38BDF8" stroke-opacity="0.08"/>
+  </g>
+
+  <ellipse cx="600" cy="140" rx="175" ry="72" stroke="#38BDF8" stroke-opacity="0.18"/>
+  <ellipse class="orbit" cx="600" cy="140" rx="138" ry="94" stroke="#A78BFA" stroke-opacity="0.22" stroke-dasharray="10 12"/>
+  <circle cx="600" cy="140" r="72" fill="url(#core)" class="pulse"/>
+  <circle cx="600" cy="140" r="28" fill="#07111F" stroke="#E0F2FE" stroke-opacity="0.85" filter="url(#glow)"/>
+  <circle cx="600" cy="140" r="7" fill="#E0F2FE" class="blink"/>
+
+  <path d="M100 140H1100" stroke="url(#line)" stroke-width="2" stroke-dasharray="5 10"/>
+
+  <g>
+    <rect class="node" x="52" y="106" width="150" height="68" rx="14"/>
+    <text class="label" x="127" y="135" text-anchor="middle">INGEST</text>
+    <text class="sub" x="127" y="156" text-anchor="middle">batch · stream</text>
+  </g>
+  <g>
+    <rect class="node" x="267" y="106" width="150" height="68" rx="14"/>
+    <text class="label" x="342" y="135" text-anchor="middle">TRANSFORM</text>
+    <text class="sub" x="342" y="156" text-anchor="middle">quality · features</text>
+  </g>
+  <g>
+    <rect class="node" x="783" y="106" width="150" height="68" rx="14"/>
+    <text class="label" x="858" y="135" text-anchor="middle">RETRIEVE</text>
+    <text class="sub" x="858" y="156" text-anchor="middle">semantic · lexical</text>
+  </g>
+  <g>
+    <rect class="node" x="998" y="106" width="150" height="68" rx="14"/>
+    <text class="label" x="1073" y="135" text-anchor="middle">SERVE</text>
+    <text class="sub" x="1073" y="156" text-anchor="middle">APIs · products</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle class="packet-a" cx="112" cy="140" r="5" fill="#22D3EE"/>
+    <circle class="packet-b" cx="112" cy="140" r="5" fill="#60A5FA"/>
+    <circle class="packet-c" cx="112" cy="140" r="5" fill="#A78BFA"/>
+  </g>
+
+  <text class="label" x="600" y="238" text-anchor="middle">DATA → MODELS → RETRIEVAL → RANKING → PRODUCTS</text>
+  <text class="sub" x="600" y="258" text-anchor="middle">reliable systems from raw signal to useful output</text>
+</svg>
