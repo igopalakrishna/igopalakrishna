@@ -1,4 +1,6 @@
-<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Data and AI systems flow</title>
+  <desc id="description">A system diagram showing batch and streaming ingestion flowing through transformation, models, retrieval, ranking, APIs, and products.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="280" gradientUnits="userSpaceOnUse">
       <stop stop-color="#07111F"/>

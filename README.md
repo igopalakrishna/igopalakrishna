@@ -2,176 +2,119 @@
 
 # Gopala Krishna Abba
 
-### Data Engineering · Applied ML · Search & Ranking · Backend Systems
+## Data & AI Systems Engineer
 
-M.S. Computer Engineering, NYU Tandon · **4.0 GPA** · Class of 2026
+**Data Engineering · Applied ML · Search & Ranking · Backend Systems**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/igopalakrishna/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello.gopalakrishna@gmail.com)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/igopalakrishna_)
+M.S. Computer Engineering, NYU Tandon — **May 2026 · 4.0 GPA**
 
-<img src="./assets/neural-systems-flow.svg" alt="Animated data and AI systems flow from ingestion through transformation, retrieval, and serving" width="100%" />
+**[View Portfolio](https://www.gopalakrishnaabba.com)** · [LinkedIn](https://www.linkedin.com/in/igopalakrishna/) · [Repositories](https://github.com/igopalakrishna?tab=repositories) · [Résumé](https://www.gopalakrishnaabba.com/resume/Gopala_Krishna_Abba_Resume.pdf) · [Email](mailto:hello.gopalakrishna@gmail.com)
 
 </div>
+
+## Recruiter Quick View
+
+- Best aligned with early-career **Data Engineering, Applied Data Science, Search & Ranking, ML/Data Platform, and backend data systems** roles.
+- Current research: **Graduate Research Assistant at NYU Chunara Lab** since January 2026, building reproducible news-data ingestion and structured LLM-labeling workflows.
+- Most recent industry experience: **Data Science Intern — Emerging Technology at FOX Corporation / FOX Tech**, February–April 2026.
+- Core differentiator: connecting data pipelines, retrieval and ranking, model evaluation, typed APIs, testing, and deployment into measurable end-to-end systems.
 
 ## Selected Impact
 
 <div align="center">
 <table>
 <tr>
-<td align="center" width="25%"><h3>4.0</h3><sub>GPA at NYU Tandon</sub></td>
-<td align="center" width="25%"><h3>12,168</h3><sub>profiles in hybrid retrieval</sub></td>
-<td align="center" width="25%"><h3>~13M</h3><sub>historical MTA records analyzed</sub></td>
-<td align="center" width="25%"><h3>92.7%</h3><sub>less data scanned in SignalLake</sub></td>
+<td align="center" width="50%"><strong>4.0 / 4.0</strong><br/><sub>NYU Tandon M.S. GPA</sub></td>
+<td align="center" width="50%"><strong>12,168 profiles</strong><br/><sub>hybrid retrieval at &lt;350 ms p95</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><strong>~13M records</strong><br/><sub>historical MTA analysis</sub></td>
+<td align="center" width="50%"><strong>92.7% fewer bytes</strong><br/><sub>scanned in SignalLake benchmark</sub></td>
 </tr>
 </table>
 </div>
 
-## What I Build
-
-- **Data platforms and analytics pipelines** — partitioned storage, batch and streaming ingestion, data quality, and SQL query layers.
-- **Search, retrieval, recommendation, and ranking systems** — hybrid semantic and lexical retrieval tuned for relevance, latency, and explainability.
-- **Applied machine learning and GenAI workflows** — fine-tuning, evaluation, embeddings, RAG, and the MLOps tooling that moves models from notebooks to useful systems.
-- **Backend APIs and ML/data infrastructure** — typed services, reproducible workflows, observability, CI, and containerized deployment.
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/neural-systems-flow-mobile.svg">
+  <img src="./assets/neural-systems-flow.svg" alt="Systems flow from batch and streaming ingestion through transformation, models, retrieval, ranking, APIs, and products" width="100%" />
+</picture>
 
 ## Experience
 
-**FOX Corporation** · Data Science Intern, Emerging Technology · *Feb–Apr 2026*  
-Built a production-oriented data pipeline and ranking workflow for editorial content on Databricks.
+**NYU Chunara Lab** — Graduate Research Assistant · *Jan 2026–present*<br/>
+Building reproducible pipelines across 10 U.S. newspapers that process 7,000+ articles weekly, plus validated LLM-labeling and external research datasets. [Experience details](https://www.gopalakrishnaabba.com/experience)
 
-**NYU Chunara Lab** · Graduate Research Assistant · *Jan 2026–present*  
-Building reproducible text-data ingestion and LLM-labeling pipelines for news and discourse research.
+**FOX Corporation / FOX Tech** — Data Science Intern — Emerging Technology · *Feb–Apr 2026*<br/>
+Built a 9-stage Databricks pipeline and hybrid semantic clustering/ranking workflow for editorial content; validated duplicate-safe runs across 14 dates in 32–42 seconds. [Experience details](https://www.gopalakrishnaabba.com/experience)
 
-**Global Futures Group** · Software Engineer Intern, Data & Search Systems · *Sep–Dec 2025*  
-Built a hybrid FAISS and BM25 search system serving 12,000+ profiles at sub-350ms p95 latency.
+**Global Futures Group** — Software Engineer Intern, AI/ML & Data Infrastructure · *Sep–Dec 2025*<br/>
+Built hybrid FAISS and BM25 retrieval, ranking, FastAPI, and PostgreSQL infrastructure for 12,168 expert profiles with p95 search latency below 350 ms. [Case study](https://www.gopalakrishnaabba.com/projects/retrieval-assistant)
 
-**NYU DICE Lab** · Graduate Research Assistant · *May–Dec 2025*  
-Researched transformer fine-tuning and normalization alternatives using LoRA and PEFT.
+**NYU DICE Lab** — Graduate Research Assistant · *May–Dec 2025*<br/>
+Implemented LoRA/PEFT experiments across DistilGPT-2 and Pythia models to measure Dynamic Tanh versus LayerNorm quality and inference trade-offs. [Research project](https://www.gopalakrishnaabba.com/projects/dyt-nonorm-llms-rewild)
 
 ## Featured Engineering Work
 
-### [SignalLake](https://github.com/igopalakrishna/signallake) · Local-first operational analytics
-`FastAPI` `DuckDB` `Parquet` `Pydantic` `Docker`
+### [SignalLake](https://github.com/igopalakrishna/signallake) — Operational log analytics
 
-Partition-aware event storage and a SQL query layer for operational analytics.  
-**Evidence:** 92.7% less data scanned, from 86.7 MB to 6.3 MB · pytest · GitHub Actions · Docker
+Local-first ingestion and analytics platform that preserves raw JSONL events, transforms them into Hive-partitioned Parquet, and queries operational metrics directly with DuckDB.
 
----
+`FastAPI` · `DuckDB` · `Parquet` · `Pydantic` · `Docker`
 
-### [ExpertMatchAI](https://github.com/igopalakrishna/ExpertMatchAI) · Hybrid expert retrieval
-`Next.js` `FastAPI` `FAISS` `BM25` `PostgreSQL`
+**Evidence:** benchmarked 1M events across 192 files; partition pruning reduced data scanned from 86.7 MB to 6.3 MB. Validated with 21 tests across four pytest files and GitHub Actions. [Case study](https://www.gopalakrishnaabba.com/projects/signal-ingestion-platform)
 
-Combined semantic and keyword retrieval so matches remain relevant when query wording differs from profile text.  
-**Evidence:** 12,168 indexed profiles · sub-350ms p95 search · Vitest · pytest · Playwright
+### [ExpertMatchAI](https://www.gopalakrishnaabba.com/projects/retrieval-assistant) — Hybrid expert search
 
----
+Internship project combining FAISS vector retrieval, BM25 lexical search, structured geo filters, tunable ranking weights, and fallback logic behind FastAPI and PostgreSQL services.
 
-### [NYC Subway Foot-Traffic Forecasting](https://github.com/igopalakrishna/nyc-subway-foot-traffic-prediction-and-forecasting) · Streaming ML pipeline
-`Kafka` `Spark Structured Streaming` `MongoDB` `scikit-learn`
+`FAISS` · `BM25` · `FastAPI` · `PostgreSQL` · `Next.js`
 
-Connected historical ridership analysis with simulated streaming ingestion and station-level forecasting.  
-**Evidence:** roughly 13 million historical MTA turnstile records processed
+**Evidence:** indexed 12,168 profiles; average response time below 200 ms, p95 below 350 ms, and full index rebuilds below 60 seconds. Validated with pytest, Vitest, and Playwright. Proprietary source code is not public.
 
----
+### [NYC Subway Foot-Traffic Forecasting](https://github.com/igopalakrishna/nyc-subway-foot-traffic-prediction-and-forecasting) — Streaming ML
 
-### [Colorectal Cancer Survival Prediction](https://github.com/igopalakrishna/colorectal-cancer-prediction) · Reproducible MLOps workflow
-`scikit-learn` `MLflow` `Kubeflow Pipelines` `Flask`
+Combined analysis and model development over approximately 13M historical MTA records with a separate live self-hosted pipeline using simulated turnstile events.
 
-Turned a clinical dataset into a tracked and reproducible survival-risk modeling workflow.  
-**Evidence:** 92.9% accuracy · 0.89 ROC-AUC on the documented dataset
+`Kafka` · `Spark Structured Streaming` · `MongoDB` · `Random Forest` · `Docker`
 
----
+**Evidence:** regression models reached approximately 2,700 RMSE and below 4.8% MAE; a separate traffic-level classifier reached 93.36% accuracy. [Case study](https://www.gopalakrishnaabba.com/projects/event-stream-router)
 
-### [VeriWire](https://github.com/igopalakrishna/VeriWire) · Voice AI verification proof of concept
-`FastAPI` `LangGraph` `Deepgram` `Twilio`
+### [Colorectal Cancer Survival Prediction](https://github.com/igopalakrishna/colorectal-cancer-prediction) — Reproducible MLOps
 
-Built a mock-banking workflow for identity verification and controlled wire-transfer decisions.  
-**Evidence:** three-factor verification · coverage across five pytest files
+Public-healthcare-data MLOps prototype covering feature selection, Gradient Boosting training, experiment tracking, Kubeflow orchestration, and Flask model serving; not a clinically validated system.
 
-<div align="right"><a href="https://github.com/igopalakrishna?tab=repositories">Explore all repositories →</a></div>
+`scikit-learn` · `MLflow` · `DAGsHub` · `Kubeflow` · `Flask`
+
+**Evidence:** processed 167,497 records, reduced 28 inputs to five through chi-square selection, and reached 92.9% accuracy with 0.89 ROC-AUC. [Case study](https://www.gopalakrishnaabba.com/projects/model-lifecycle-service)
+
+<div align="right"><a href="https://github.com/igopalakrishna?tab=repositories">Explore public repositories →</a></div>
+
+## Where My Experience Fits
+
+| Role family | Strongest public evidence |
+| --- | --- |
+| **Data Engineering** | FOX Databricks pipeline, current NYU ingestion, SignalLake, Kafka/Spark streaming |
+| **Applied Data Science / ML** | FOX clustering and ranking, NYU research, forecasting, reproducible MLOps |
+| **Search & Ranking** | Global Futures / ExpertMatchAI hybrid retrieval, geo filtering, tunable ranking, fallbacks |
+| **Backend Data Systems** | FastAPI, PostgreSQL, DuckDB, REST APIs, Docker, CI, structured logging, automated tests |
 
 ## Technical Toolkit
 
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,ts,js,java,bash" alt="Python, TypeScript, JavaScript, Java, and Bash" />
-</p>
-
-`SQL` · `Python` · `TypeScript` · `JavaScript` · `Java` · `Bash`
-
-### Data Engineering & Analytics
-
-<p>
-<img src="https://skillicons.dev/icons?i=kafka" alt="Apache Kafka" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" width="48" height="48" alt="Apache Spark" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="48" height="48" alt="Pandas" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="48" height="48" alt="NumPy" />
-</p>
-
-`PySpark` · `Databricks` · `Delta Lake` · `Unity Catalog` · `Apache Parquet` · `DuckDB` · `Apache Airflow` · `Batch Processing` · `Stream Processing` · `Data Quality`
-
-### Databases, Search & Retrieval
-
-<p>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb" alt="PostgreSQL, MySQL, and MongoDB" />
-</p>
-
-`FAISS` · `BM25` · `Vector Search` · `Hybrid Retrieval` · `Embeddings` · `Recommendation Systems`
-
-### Machine Learning & AI
-
-<p>
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn" alt="PyTorch, TensorFlow, and scikit-learn" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/huggingface/huggingface-original.svg" width="48" height="48" alt="Hugging Face" />
-</p>
-
-`Sentence Transformers` · `LangChain` · `LangGraph` · `MLflow` · `RAG` · `LoRA / PEFT` · `Model Evaluation` · `Ranking Systems`
-
-### Backend, Applications & APIs
-
-<p>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs,react,nextjs,tailwind,prisma" alt="FastAPI, Flask, Node.js, React, Next.js, Tailwind CSS, and Prisma" />
-</p>
-
-`REST APIs` · `Pydantic` · `Streamlit` · `Gradio` · `Typed Services` · `Structured Logging`
-
-### Cloud, DevOps & MLOps
-
-<p>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,githubactions,jenkins,vercel" alt="Docker, Kubernetes, AWS, Google Cloud, GitHub Actions, Jenkins, and Vercel" />
-</p>
-
-`DVC` · `Kubeflow` · `Railway` · `CI/CD` · `Containerization` · `Reproducible Workflows`
-
-### Testing & Engineering Practice
-
-<p>
-<img src="https://skillicons.dev/icons?i=pytest,vitest" alt="pytest and Vitest" />
-</p>
-
-`Playwright` · `Integration Testing` · `Data Validation` · `Observability` · `Fallback Design` · `Documentation`
+- **Data & Distributed Systems:** Python, SQL, PySpark, Spark Structured Streaming, Kafka, Databricks, Delta Lake, Parquet, DuckDB
+- **ML, Retrieval & Evaluation:** scikit-learn, PyTorch, Hugging Face, FAISS, BM25, embeddings, MLflow, relevance and model evaluation
+- **Backend & Databases:** FastAPI, Flask, PostgreSQL, MongoDB, Prisma, Next.js, TypeScript, REST APIs
+- **Cloud, Testing & Delivery:** Docker, Kubernetes, Kubeflow, GitHub Actions, Vercel, Railway, pytest, Vitest, Playwright
 
 ## How I Work
 
-> Start with the simplest correct system. Measure before adding complexity. Make failures visible, recoverable, and testable.
+> Start with the simplest correct system, define measurable behavior, and make failures visible before adding complexity.
 
-- Treat retrieval and ML quality as measurable product behavior, not only model output.
-- Build reproducible workflows, clear interfaces, and explicit fallback paths.
-- Document trade-offs so the next engineer can understand why the system works the way it does.
+- Evaluate retrieval and ML systems with explicit quality, latency, and failure criteria.
+- Make data and model workflows reproducible through versioned artifacts, rerunnable pipelines, tests, and CI.
+- Document architectural trade-offs so another engineer can understand both the result and its limits.
 
-## Currently
+## Current Focus
 
-- Building reproducible text-data and LLM-labeling pipelines at NYU.
-- Exploring reliable data platforms, retrieval, ranking, and ML infrastructure.
-- Improving selected projects for production-quality deployment.
-- Open to full-time roles in Data Engineering, Applied Data Science, ML/AI Platform Engineering, and backend data systems.
+I am currently building reproducible text-data and LLM-labeling systems at NYU Chunara Lab and am open to early-career roles in **Data Engineering, Applied Data Science, Search & Ranking, ML/Data Platforms, and backend systems for data and AI**.
 
-<div align="center">
-
-### Let’s build reliable systems from complex data.
-
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/igopalakrishna/)
-[![Email](https://img.shields.io/badge/Send_an_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello.gopalakrishna@gmail.com)
-
-</div>
+**[View the portfolio](https://www.gopalakrishnaabba.com)** · [Explore repositories](https://github.com/igopalakrishna?tab=repositories) · [Connect on LinkedIn](https://www.linkedin.com/in/igopalakrishna/) · [Email me](mailto:hello.gopalakrishna@gmail.com)
